@@ -20,11 +20,11 @@ public static class InjectionServices
         );
 
         // Repositories
-        services.AddTransient<IBillRepository, BillRepository>();
+        services.AddTransient<ICategoryRepository, CategoryRepository>();
         services.AddTransient<IUnitOfWork, UnitOfWork>();
 
         // Services
-        services.AddTransient<IBillService, BillService>();
+        services.AddTransient<ICategoryService, CategoryService>();
 
         return services;
     }

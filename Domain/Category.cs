@@ -1,6 +1,7 @@
 namespace Finapp.Models;
 
-public class Bill
+
+public class Category
 {
     public int Id { get; set; }
 

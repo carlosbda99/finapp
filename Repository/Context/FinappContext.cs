@@ -7,5 +7,5 @@ public class FinappContext : DbContext
 {
     public FinappContext(DbContextOptions<FinappContext> options) : base(options) { }
 
-    public DbSet<Bill> Bills { get; set; } = null!;
+    public DbSet<Category> Categories { get; set; } = null!;
 }
