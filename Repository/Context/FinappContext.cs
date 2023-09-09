@@ -8,4 +8,10 @@ public class FinappContext : DbContext
     public FinappContext(DbContextOptions<FinappContext> options) : base(options) { }
 
     public DbSet<Category> Categories { get; set; } = null!;
+
+    public DbSet<Card> Cards { get; set; } = null!;
+
+    public DbSet<Deal> Deals { get; set; } = null!;
+
+    public DbSet<Wallet> Wallets { get; set; } = null!;
 }

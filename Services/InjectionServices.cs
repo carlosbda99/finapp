@@ -21,10 +21,16 @@ public static class InjectionServices
 
         // Repositories
         services.AddTransient<ICategoryRepository, CategoryRepository>();
+        services.AddTransient<ICardRepository, CardRepository>();
+        services.AddTransient<IDealRepository, DealRepository>();
+        services.AddTransient<IWalletRepository, WalletRepository>();
         services.AddTransient<IUnitOfWork, UnitOfWork>();
 
         // Services
         services.AddTransient<ICategoryService, CategoryService>();
+        services.AddTransient<ICardService, CardService>();
+        services.AddTransient<IDealService, DealService>();
+        services.AddTransient<IWalletService, WalletService>();
 
         return services;
     }
